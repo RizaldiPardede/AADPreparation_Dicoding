@@ -14,7 +14,7 @@
         android:hint="@string/course_name">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/add_name_course"
+            android:id="@+id/ed_course_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="255"
@@ -23,7 +23,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
-        android:id="@+id/add_spinner_day"
+        android:id="@+id/spinner_day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -39,7 +39,7 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/add_start_time"
+            android:id="@+id/ib_start_time"
             style="@style/Base.Widget.AppCompat.ImageButton"
             android:layout_width="50dp"
             android:layout_height="match_parent"
@@ -50,10 +50,10 @@
             android:src="@drawable/ic_time" />
 
         <TextView
-            android:id="@+id/text_start_time"
+            android:id="@+id/tv_start_time"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:layout_toEndOf="@id/add_start_time"
+            android:layout_toEndOf="@id/ib_start_time"
             android:gravity="center_vertical"
             android:text="@string/start_time"
             android:textColor="@color/textPrimary" />
@@ -62,29 +62,29 @@
             android:id="@+id/add_text_start_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_start_time"
-            android:layout_toEndOf="@id/add_start_time"
+            android:layout_below="@id/tv_start_time"
+            android:layout_toEndOf="@id/ib_start_time"
             android:gravity="center_vertical"
             android:textColor="@color/textPrimary"
             tools:text="@string/start_time" />
 
         <ImageButton
-            android:id="@+id/add_end_time"
+            android:id="@+id/ib_end_time"
             style="@style/Base.Widget.AppCompat.ImageButton"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_toEndOf="@id/text_start_time"
+            android:layout_toEndOf="@id/tv_start_time"
             android:contentDescription="@string/end_time"
             android:onClick="showEndTimePicker"
             android:src="@drawable/ic_time" />
 
         <TextView
-            android:id="@+id/text_end_time"
+            android:id="@+id/tv_end_time"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:layout_toEndOf="@id/add_end_time"
+            android:layout_toEndOf="@id/ib_end_time"
             android:gravity="center_vertical"
             android:text="@string/end_time"
             android:textColor="@color/textPrimary" />
@@ -93,8 +93,8 @@
             android:id="@+id/add_text_end_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_end_time"
-            android:layout_toEndOf="@id/add_end_time"
+            android:layout_below="@id/tv_end_time"
+            android:layout_toEndOf="@id/ib_end_time"
             android:gravity="center_vertical"
             android:textColor="@color/textPrimary"
             tools:text="@string/end_time" />
@@ -108,7 +108,7 @@
         android:hint="@string/lecturer">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/add_name_lecturer"
+            android:id="@+id/ed_lecturer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="255"

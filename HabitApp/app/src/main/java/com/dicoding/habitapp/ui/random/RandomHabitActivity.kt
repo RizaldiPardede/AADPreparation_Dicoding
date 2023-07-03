@@ -33,14 +33,21 @@ class RandomHabitActivity : AppCompatActivity() {
 
         val factory = ViewModelFactory.getInstance(this)
         val viewModel = ViewModelProvider(this, factory).get(RandomHabitViewModel::class.java)
-        viewModel.priorityLevelHigh.observe(this, {
-            adapter.submitData(RandomHabitAdapter.PageType.HIGH, it)
+
+        viewModel.priorityLevelHigh.observe(this, { data ->
+            data?.let {
+                adapter.submitData(RandomHabitAdapter.PageType.HIGH, it)
+            }
         })
-        viewModel.priorityLevelMedium.observe(this, {
-            adapter.submitData(RandomHabitAdapter.PageType.MEDIUM, it)
+        viewModel.priorityLevelMedium.observe(this, { data ->
+            data?.let {
+                adapter.submitData(RandomHabitAdapter.PageType.MEDIUM, it)
+            }
         })
-        viewModel.priorityLevelLow.observe(this, {
-            adapter.submitData(RandomHabitAdapter.PageType.LOW, it)
+        viewModel.priorityLevelLow.observe(this, { data ->
+            data?.let {
+                adapter.submitData(RandomHabitAdapter.PageType.LOW, it)
+            }
         })
 
     }

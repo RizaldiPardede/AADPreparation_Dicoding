@@ -32,11 +32,11 @@ class HomeActivityTest {
         val addCourse = getAddCourseActivity()
         assertTrue(addCourse?.javaClass == AddCourseActivity::class.java)
 
-        onView(withId(R.id.add_start_time)).check(matches(isDisplayed()))
-        onView(withId(R.id.add_name_course)).check(matches(isDisplayed()))
-        onView(withId(R.id.add_spinner_day)).check(matches(isDisplayed()))
-        onView(withId(R.id.add_end_time)).check(matches(isDisplayed()))
-        onView(withId(R.id.add_name_lecturer)).check(matches(isDisplayed()))
+        onView(withId(R.id.ib_start_time)).check(matches(isDisplayed()))
+        onView(withId(R.id.ed_course_name)).check(matches(isDisplayed()))
+        onView(withId(R.id.spinner_day)).check(matches(isDisplayed()))
+        onView(withId(R.id.ib_end_time)).check(matches(isDisplayed()))
+        onView(withId(R.id.ed_lecturer)).check(matches(isDisplayed()))
         onView(withId(R.id.add_note)).check(matches(isDisplayed()))
 
     }

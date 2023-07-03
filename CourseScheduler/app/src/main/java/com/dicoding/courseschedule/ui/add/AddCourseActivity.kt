@@ -49,13 +49,13 @@ class AddCourseActivity : AppCompatActivity(), TimePickerFragment.DialogTimeList
         return when (item.itemId) {
             R.id.action_insert -> {
                 val courseName =
-                    findViewById<TextInputEditText>(R.id.add_name_course).text.toString().trim()
-                val day = findViewById<Spinner>(R.id.add_spinner_day).selectedItemPosition
+                    findViewById<TextInputEditText>(R.id.ed_course_name).text.toString().trim()
+                val day = findViewById<Spinner>(R.id.spinner_day).selectedItemPosition
                 val startTime =
                     findViewById<TextView>(R.id.add_text_start_time).text.toString().trim()
                 val endTime = findViewById<TextView>(R.id.add_text_end_time).text.toString().trim()
                 val lecturer =
-                    findViewById<TextInputEditText>(R.id.add_name_lecturer).text.toString().trim()
+                    findViewById<TextInputEditText>(R.id.ed_lecturer).text.toString().trim()
                 val note = findViewById<TextInputEditText>(R.id.add_note).text.toString().trim()
 
 
@@ -90,11 +90,11 @@ class AddCourseActivity : AppCompatActivity(), TimePickerFragment.DialogTimeList
         val timeFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
 
         when (view.id) {
-            R.id.add_start_time -> {
+            R.id.ib_start_time -> {
                 findViewById<TextView>(R.id.add_text_start_time).text =
                     timeFormat.format(calender.time)
             }
-            R.id.add_end_time -> {
+            R.id.ib_end_time -> {
                 findViewById<TextView>(R.id.add_text_end_time).text =
                     timeFormat.format(calender.time)
 
