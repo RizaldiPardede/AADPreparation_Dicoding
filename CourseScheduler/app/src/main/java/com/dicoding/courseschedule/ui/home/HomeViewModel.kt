@@ -7,7 +7,7 @@ import com.dicoding.courseschedule.data.Course
 import com.dicoding.courseschedule.data.DataRepository
 import com.dicoding.courseschedule.util.QueryType
 
-class HomeViewModel(private val repository: DataRepository) : ViewModel() {
+class HomeViewModel(private val repository: DataRepository): ViewModel() {
 
     private val _queryType = MutableLiveData<QueryType>()
 
@@ -18,7 +18,6 @@ class HomeViewModel(private val repository: DataRepository) : ViewModel() {
     fun setQueryType(queryType: QueryType) {
         _queryType.value = queryType
     }
-
     fun getNearestSchedule(queryType: QueryType): LiveData<Course?> {
         return repository.getNearestSchedule(queryType)
     }

@@ -7,14 +7,10 @@ import com.dicoding.courseschedule.R
 import com.dicoding.courseschedule.data.Course
 import com.dicoding.courseschedule.util.DayName.Companion.getByNumber
 
-class CourseViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+class CourseViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
     private lateinit var course: Course
     private val timeString = itemView.context.resources.getString(R.string.time_format)
-    private val time: TextView = itemView.findViewById(R.id.tv_time)
-    private val name: TextView = itemView.findViewById(R.id.tv_course)
-    private val lecturerName: TextView = itemView.findViewById(R.id.tv_lecturer)
-
 
     //TODO 7 : Complete ViewHolder to show item
     fun bind(course: Course, clickListener: (Course) -> Unit) {
@@ -23,14 +19,12 @@ class CourseViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         course.apply {
             val dayName = getByNumber(day)
             val timeFormat = String.format(timeString, dayName, startTime, endTime)
-
-            time.text = timeFormat
-
-
-            name.text = courseName
-
-            lecturerName.text = lecturer
-
+            val txtCourse: TextView = itemView.findViewById(R.id.tv_course)
+            val txtTime: TextView = itemView.findViewById(R.id.tv_time)
+            val txtLecture: TextView = itemView.findViewById(R.id.tv_lecturer)
+            txtCourse.text=courseName
+            txtTime.text=timeFormat
+            txtLecture.text=lecturer
         }
 
         itemView.setOnClickListener {

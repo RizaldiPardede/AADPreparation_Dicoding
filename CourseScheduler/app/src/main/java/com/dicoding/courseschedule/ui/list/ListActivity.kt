@@ -53,11 +53,9 @@ class ListActivity : AppCompatActivity() {
 
     private fun onCourseClick(course: Course) {
         //TODO 8 : Intent and show detailed course
-        val intent = Intent(this, DetailActivity::class.java).apply {
-            putExtra(DetailActivity.COURSE_ID, course.id)
-        }
+        val intent = Intent(this, DetailActivity::class.java)
+        intent.putExtra(DetailActivity.COURSE_ID, course.id)
         startActivity(intent)
-
     }
 
     private fun initAction() {
@@ -77,15 +75,11 @@ class ListActivity : AppCompatActivity() {
 
     private fun setFabClick() {
         //TODO 9 : Create AddCourseActivity to set new course schedule
-        // val addCourse = Intent(this, Add)
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            val addCourse = Intent(this, AddCourseActivity::class.java)
-            startActivity(addCourse)
-
+            val intent = Intent(this, AddCourseActivity::class.java)
+            startActivity(intent)
         }
-
     }
-
 
     //TODO 14 : Fixing bug : sort menu not show and course not deleted when list is swiped
     private fun showSortMenu() {

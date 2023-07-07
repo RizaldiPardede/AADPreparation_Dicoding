@@ -5,7 +5,7 @@
       "title": "Reading book",
       "focusTime": 20,
       "startTime": "16:00",
-      "priorityLevel": "High"
+      "priorityLevel": "Low"
     },
     {
       "id": 2,
@@ -19,7 +19,7 @@
       "title": "Coding practice",
       "focusTime": 60,
       "startTime": "10:00",
-      "priorityLevel": "High"
+      "priorityLevel": "Low"
     },
     {
       "id": 4,

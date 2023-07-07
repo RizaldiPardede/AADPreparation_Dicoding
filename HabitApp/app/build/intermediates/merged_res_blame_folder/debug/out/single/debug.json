@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/layout_activity_add_habit.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/layout/activity_add_habit.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/layout_settings_activity.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/layout/settings_activity.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/layout_content_detail_habit.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/layout/content_detail_habit.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.dicoding.habitapp-pngs-36:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/layout_content_habit.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/layout/content_habit.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/layout_activity_random_habit.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/layout/activity_random_habit.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/menu_menu_main.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/menu/menu_main.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/layout_activity_habit_list.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/layout/activity_habit_list.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/drawable_ic_priority_low.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/drawable/ic_priority_low.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/drawable_ic_notifications.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/drawable/ic_notifications.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/drawable_ic_random.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/drawable/ic_random.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/menu_filter_habits.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/menu/filter_habits.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/drawable_ic_time.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/drawable/ic_time.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/xml_root_preferences.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/xml/root_preferences.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/drawable_ic_priority_medium.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/drawable/ic_priority_medium.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/drawable_ic_priority_high.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/drawable/ic_priority_high.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/menu_menu_add.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/menu/menu_add.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/drawable_ic_filter_list.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/drawable/ic_filter_list.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/layout_habit_item.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/layout/habit_item.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/raw_habit.json.flat",
+        "source": "com.dicoding.habitapp-main-43:/raw/habit.json"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/drawable_ic_done.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/drawable/ic_done.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/layout_pager_item.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/layout/pager_item.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/layout_activity_count_down.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/layout/activity_count_down.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.dicoding.habitapp-merged_res-41:/layout_activity_detail_habit.xml.flat",
+        "source": "com.dicoding.habitapp-main-43:/layout/activity_detail_habit.xml"
+    }
+]

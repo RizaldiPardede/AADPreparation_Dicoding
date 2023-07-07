@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.courseschedule.R
 import com.dicoding.courseschedule.data.Course
@@ -28,36 +29,26 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         supportActionBar?.title = resources.getString(R.string.today_schedule)
+        val viewFactory = HomeViewModelFactory.createFactory(this)
+        viewModel = ViewModelProvider(this, viewFactory)[HomeViewModel::class.java]
+        viewModel.getNearestSchedule(queryType).observe(this, Observer(this::showTodaySchedule))
 
-        val factory = HomeViewModelFactory.createFactory(this)
-        viewModel = ViewModelProvider(this, factory)[HomeViewModel::class.java]
-
-        viewModel.getNearestSchedule(queryType).observe(this, {
-            showTodaySchedule(it)
-        })
     }
 
     private fun showTodaySchedule(course: Course?) {
         checkQueryType(course)
+        val cardHome = findViewById<CardHomeView>(R.id.view_home)
         course?.apply {
             val dayName = DayName.getByNumber(day)
             val time = String.format(getString(R.string.time_format), dayName, startTime, endTime)
             val remainingTime = timeDifference(day, startTime)
-
-            val cardHome = findViewById<CardHomeView>(R.id.view_home)
-
-            cardHome.apply {
-                setCourseName(courseName)
-                setTime(time)
-                setRemainingTime("($remainingTime)")
-                setLecturer(lecturer)
-                setNote(note)
-            }
-
-            findViewById<TextView>(R.id.tv_empty_home).visibility =
-                if (course == null) View.VISIBLE else View.GONE
-
+            cardHome.setCourseName(course.courseName)
+            cardHome.setTime(time)
+            cardHome.setLecturer(course.lecturer)
+            cardHome.setRemainingTime(remainingTime)
+            cardHome.setNote(course.note)
         }
+        cardHome.visibility = if (course == null) View.GONE else View.VISIBLE
 
         findViewById<TextView>(R.id.tv_empty_home).visibility =
             if (course == null) View.VISIBLE else View.GONE
@@ -86,7 +77,6 @@ class HomeActivity : AppCompatActivity() {
             R.id.action_settings -> Intent(this, SettingsActivity::class.java)
             R.id.action_add -> Intent(this, AddCourseActivity::class.java)
             R.id.action_list -> Intent(this, ListActivity::class.java)
-
             else -> null
         } ?: return super.onOptionsItemSelected(item)
 
